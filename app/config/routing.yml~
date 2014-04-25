@@ -1,0 +1,9 @@
+accesologin:
+    resource: "@AccesologinBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+usuarios:
+    resource: "@AccesologinBundle/Resources/config/routing.yml"
+    prefix:   /new
+

@@ -1,0 +1,7 @@
+parameters:
+#    accesologin.example.class: Acceso\loginBundle\Example
+
+services:
+#    accesologin.example:
+#        class: %accesologin.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

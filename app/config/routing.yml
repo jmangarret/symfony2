@@ -1,0 +1,9 @@
+accesologin_homepage:
+    pattern:  /
+    defaults: { _controller: AccesologinBundle:Default:index }
+
+accesologin_usuarios:
+    resource: "@AccesologinBundle/Resources/config/routing.yml"
+    prefix:   /usuarios	
+
+

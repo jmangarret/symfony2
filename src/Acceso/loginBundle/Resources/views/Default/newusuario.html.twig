@@ -1,0 +1,68 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<h3 align="center">Registro de Usuarios</h2>
+	<table align="center" border=1 class="tabla">
+	{{ form_start(form) }}	
+	<tr>
+		<td>
+			{{form_label(form.nombre, "Nombre del Usuario:")}}		
+		</td>
+		<td>
+			{{form_widget(form.nombre)}}
+			{{form_errors(form.nombre)}}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			{{form_label(form.clave, "Clave del Usuario:")}}		
+		</td>
+		<td>
+			{{form_widget(form.clave)}}
+			{{form_errors(form.clave)}}
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			{{form_label(form.confirmar, "Confirmar Clave:")}}		
+		</td>
+		<td>
+			{{form_widget(form.confirmar)}}
+			{{form_errors(form.confirmar)}}
+		</td>
+	</tr>
+
+
+
+
+	<tr>
+		<td>
+			{{form_label(form.nivel, "Nivel del Usuario:")}}		
+		</td>
+		<td>
+			{{form_widget(form.nivel)}}
+			{{form_errors(form.nivel)}}
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			{{form_label(form.status, "Status del Usuario:")}}		
+		</td>
+		<td>
+			{{form_widget(form.status)}}
+			{{form_errors(form.status)}}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+			{{form_label(form.Enviar)}}		
+			{{form_widget(form.Enviar)}}			
+		</td>
+	</tr>
+
+	{{ form_end(form) }}
+	</table>
+
+{% endblock %}

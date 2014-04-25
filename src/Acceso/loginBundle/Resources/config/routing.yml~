@@ -1,0 +1,7 @@
+accesologin_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: AccesologinBundle:Default:index }
+
+accesologin_new:
+    pattern:  /nuevo
+    defaults: { _controller: AccesologinBundle:Default:new }

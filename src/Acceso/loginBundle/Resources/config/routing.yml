@@ -1,0 +1,11 @@
+accesologin_homepage:
+    pattern:  /
+    defaults: { _controller: AccesologinBundle:Usuarios:index }
+
+accesologin_nuevo:
+    pattern:  /new
+    defaults: { _controller: AccesologinBundle:Usuarios:nuevo }
+
+accesologin_lista:
+    pattern:  /lista
+    defaults: { _controller: AccesologinBundle:Usuarios:listado}

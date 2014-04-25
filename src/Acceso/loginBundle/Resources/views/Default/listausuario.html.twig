@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<h3 align="center">Listado de Usuarios</h2>	
+    <table align="center" border=1 class="tabla">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Cedula</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.id }}</td>
+                <td>{{ entity.nombre }}</td>
+                <td>{{ entity.clave}}</td>
+                <td>{{ entity.nivel }}</td>
+                <td>
+ 
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <div align=center><a href="{{url('accesologin_nuevo')}}">Nuevo</a></div>
+
+{% endblock %}
