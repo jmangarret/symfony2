@@ -34,79 +34,72 @@ class __TwigTemplate_c8e524aee549cebb829f42d1d6cd6dc9df72fcf3d1a197d4c632f3f0e61
         // line 6
         echo         $this->env->getExtension('form')->renderer->renderBlock($this->getContext($context, "form"), 'form_start');
         echo "\t
+\t<div align=\"center\" style=\"color:red\"><i>";
+        // line 7
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute($this->getContext($context, "form"), "clave"), "first"), 'errors');
+        echo "</i></div>
 \t<tr>
 \t\t<td>
 \t\t\t";
-        // line 9
+        // line 10
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "nombre"), 'label', array("label" => "Nombre del Usuario:"));
         echo "\t\t
 \t\t</td>
 \t\t<td>
 \t\t\t";
-        // line 12
+        // line 13
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "nombre"), 'widget');
         echo "
 \t\t\t";
-        // line 13
+        // line 14
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "nombre"), 'errors');
         echo "
 \t\t</td>
 \t</tr>
 \t<tr>
-\t\t<td>
+\t\t<td>\t\t\t
 \t\t\t";
-        // line 18
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "clave"), 'label', array("label" => "Clave del Usuario:"));
+        // line 19
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute($this->getContext($context, "form"), "clave"), "first"), 'label', array("label" => "Clave del Usuario:"));
         echo "\t\t
 \t\t</td>
 \t\t<td>
-\t\t\t";
-        // line 21
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "clave"), 'widget');
-        echo "
 \t\t\t";
         // line 22
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "clave"), 'errors');
-        echo "
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute($this->getContext($context, "form"), "clave"), "first"), 'widget');
+        echo "\t\t\t
 \t\t</td>
 \t</tr>
-
 \t<tr>
 \t\t<td>
 \t\t\t";
-        // line 28
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "confirmar"), 'label', array("label" => "Confirmar Clave:"));
+        // line 27
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute($this->getContext($context, "form"), "clave"), "second"), 'label', array("label" => "Repetir Clave:"));
         echo "\t\t
 \t\t</td>
 \t\t<td>
 \t\t\t";
-        // line 31
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "confirmar"), 'widget');
-        echo "
-\t\t\t";
-        // line 32
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "confirmar"), 'errors');
-        echo "
+        // line 30
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute($this->getContext($context, "form"), "clave"), "second"), 'widget');
+        echo "\t\t\t
 \t\t</td>
 \t</tr>
 
-
-
-
+\t
 \t<tr>
 \t\t<td>
 \t\t\t";
-        // line 41
+        // line 37
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "nivel"), 'label', array("label" => "Nivel del Usuario:"));
         echo "\t\t
 \t\t</td>
 \t\t<td>
 \t\t\t";
-        // line 44
+        // line 40
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "nivel"), 'widget');
         echo "
 \t\t\t";
-        // line 45
+        // line 41
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "nivel"), 'errors');
         echo "
 \t\t</td>
@@ -115,17 +108,17 @@ class __TwigTemplate_c8e524aee549cebb829f42d1d6cd6dc9df72fcf3d1a197d4c632f3f0e61
 \t<tr>
 \t\t<td>
 \t\t\t";
-        // line 51
+        // line 47
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "status"), 'label', array("label" => "Status del Usuario:"));
         echo "\t\t
 \t\t</td>
 \t\t<td>
 \t\t\t";
-        // line 54
+        // line 50
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "status"), 'widget');
         echo "
 \t\t\t";
-        // line 55
+        // line 51
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "status"), 'errors');
         echo "
 \t\t</td>
@@ -133,18 +126,18 @@ class __TwigTemplate_c8e524aee549cebb829f42d1d6cd6dc9df72fcf3d1a197d4c632f3f0e61
 \t<tr>
 \t\t<td colspan=\"2\" align=\"center\">
 \t\t\t";
-        // line 60
+        // line 56
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "Enviar"), 'label');
         echo "\t\t
 \t\t\t";
-        // line 61
+        // line 57
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "Enviar"), 'widget');
         echo "\t\t\t
 \t\t</td>
 \t</tr>
 
 \t";
-        // line 65
+        // line 61
         echo         $this->env->getExtension('form')->renderer->renderBlock($this->getContext($context, "form"), 'form_end');
         echo "
 \t</table>
@@ -164,6 +157,6 @@ class __TwigTemplate_c8e524aee549cebb829f42d1d6cd6dc9df72fcf3d1a197d4c632f3f0e61
 
     public function getDebugInfo()
     {
-        return array (  148 => 65,  141 => 61,  137 => 60,  129 => 55,  125 => 54,  119 => 51,  110 => 45,  106 => 44,  100 => 41,  88 => 32,  84 => 31,  78 => 28,  69 => 22,  65 => 21,  59 => 18,  51 => 13,  47 => 12,  41 => 9,  35 => 6,  31 => 4,  28 => 3,);
+        return array (  141 => 61,  134 => 57,  130 => 56,  122 => 51,  118 => 50,  112 => 47,  103 => 41,  99 => 40,  93 => 37,  83 => 30,  77 => 27,  69 => 22,  63 => 19,  55 => 14,  51 => 13,  45 => 10,  39 => 7,  35 => 6,  31 => 4,  28 => 3,);
     }
 }

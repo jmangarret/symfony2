@@ -4,6 +4,7 @@
 <h3 align="center">Registro de Usuarios</h2>
 	<table align="center" border=1 class="tabla">
 	{{ form_start(form) }}	
+	<div align="center" style="color:red"><i>{{form_errors(form.clave.first)}}</i></div>
 	<tr>
 		<td>
 			{{form_label(form.nombre, "Nombre del Usuario:")}}		
@@ -14,28 +15,23 @@
 		</td>
 	</tr>
 	<tr>
-		<td>
-			{{form_label(form.clave, "Clave del Usuario:")}}		
+		<td>			
+			{{form_label(form.clave.first, "Clave del Usuario:")}}		
 		</td>
 		<td>
-			{{form_widget(form.clave)}}
-			{{form_errors(form.clave)}}
+			{{form_widget(form.clave.first)}}			
 		</td>
 	</tr>
-
 	<tr>
 		<td>
-			{{form_label(form.confirmar, "Confirmar Clave:")}}		
+			{{form_label(form.clave.second, "Repetir Clave:")}}		
 		</td>
 		<td>
-			{{form_widget(form.confirmar)}}
-			{{form_errors(form.confirmar)}}
+			{{form_widget(form.clave.second)}}			
 		</td>
 	</tr>
 
-
-
-
+	
 	<tr>
 		<td>
 			{{form_label(form.nivel, "Nivel del Usuario:")}}		

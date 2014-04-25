@@ -24,6 +24,19 @@ class UsuariosController extends Controller
 		
 
  		if($request->getMethod()=='POST'){ 
+ 			/*
+ 			$datos=$request->request->all();
+ 			$clave=$datos['usuarios']['clave'];
+ 			$confirmar=$datos['usuarios']['confirmar'];
+ 			if ($clave<>$confirmar){
+ 				$this->get('session')->getFlashBag()->add('alert', 'Debe coinicidir las claves.');
+            	return $this->redirect($this->generateUrl('accesologin_nuevo', array('form' => $form)));
+ 			} 				
+ 			else{
+ 				echo "Si coinciden las claves"; 
+ 			}  				
+ 			exit;
+ 			*/
 	    	$form ->bind($request);
 	    	if ($form->isValid()){
 	            $em = $this->getDoctrine()->getEntityManager();
